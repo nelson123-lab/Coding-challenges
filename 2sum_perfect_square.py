@@ -17,9 +17,3 @@ def solution(numbers):
     return res
 
 print(solution([-2, -1, 0, 1, 2]))
-# solution
-
-
-
-
-s
