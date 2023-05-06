@@ -1,16 +1,3 @@
-def longestPalindrome(self, string1: str) -> str:
-        if string1 == "" or string1 == len(string1) *string1[0]:
-            return string1
-        
-        p = string1[0]
-        l = 1
-        for i in range(len(string1)):
-            for j in range(len(string1), 0, -1):
-                str = string1[i:j]
-                if str == str[::-1] and len(str) > l:
-                    p = str
-                    l = len(str)
-        return p
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         res = ""
