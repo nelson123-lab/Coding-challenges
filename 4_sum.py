@@ -34,3 +34,9 @@ class Solution:
                     else:
                         right -= 1
         return res
+"""   
+This problem can be solved using a variation of the two-pointer approach. We can first sort the array and then use two nested loops to fix the first 
+two elements of the quadruplet. We can then use two pointers to find the remaining two elements such that their sum is equal to the target.
+To avoid duplicates, we can skip over elements that are equal to the previous element in the outer loop and the inner loop. We can also skip over 
+elements that are greater than the target minus the sum of the first two elements.
+"""
