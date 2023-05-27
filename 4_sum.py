@@ -1,29 +1,36 @@
-# Function to check if quadruplet exists in a list with the given sum
-def hasQuadruplet(nums, target):
- 
-    # create an empty dictionary
-    # key —> target of a pair in the list
-    # value —> list storing an index of every pair having that sum
-    d = {}
- 
-    # consider each element except the last element
-    for i in range(len(nums) - 1):
-        # start from the i'th element until the last elements
-        for j in range(i + 1, len(nums)):
-            # calculate the remaining sum
-            val = target - (nums[i] + nums[j])
-            # if the remaining sum is found on the dictionary,
-            # we have found a quadruplet
-            if val in d:
-                # check every pair having a sum equal to the remaining sum
-                for pair in d[val]:
-                    x, y = pair
-                    # if quadruplet doesn't overlap, print it and return true
-                    if (x != i and x != j) and (y != i and y != j):
-                        print('Quadruplet Found', (nums[i], nums[j], nums[x], nums[y]))
-                        return True
-            # insert the current pair into the dictionary
-            d.setdefault(nums[i] + nums[j], []).append((i, j))
- 
-    # return false if quadruplet doesn't exist
-    return False
+class Solution:
+    def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+        # Sorting the number of the num list.
+        nums.sort()
+        n = len(nums)
+        res = []
+        for i in range(n - 3):
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+            if nums[i] + nums[i + 1] + nums[i + 2] + nums[i + 3] > target:
+                break
+            if nums[i] + nums[n - 3] + nums[n - 2] + nums[n - 1] < target:
+                continue
+            for j in range(i + 1, n - 2):
+                if j > i + 1 and nums[j] == nums[j - 1]:
+                    continue
+                if nums[i] + nums[j] + nums[j + 1] + nums[j + 2] > target:
+                    break
+                if nums[i] + nums[j] + nums[n - 2] + nums[n - 1] < target:
+                    continue
+                left, right = j + 1, n - 1
+                while left < right:
+                    total = nums[i] + nums[j] + nums[left] + nums[right]
+                    if total == target:
+                        res.append([nums[i], nums[j], nums[left], nums[right]])
+                        while left < right and nums[left] == nums[left + 1]:
+                            left += 1
+                        while left < right and nums[right] == nums[right - 1]:
+                            right -= 1
+                        left += 1
+                        right -= 1
+                    elif total < target:
+                        left += 1
+                    else:
+                        right -= 1
+        return res
