@@ -8,8 +8,7 @@ def longestCommonPrefix(strs):
             if not prefix:
                 return ""
     return prefix
-
+"""
 To find the longest common prefix among an array of strings, we can start by comparing the first character of all the strings. If they are the same, we 
 move on to the next character and continue the comparison. If at any point the characters are not the same, we return the prefix up to that point.
-
-
+"""
