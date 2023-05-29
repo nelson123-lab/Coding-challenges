@@ -26,3 +26,5 @@ def validPalindrome(s: str) -> bool:
         return False
 
 print(validPalindrome("eddze"))
+
+# This solution exceeds the time limit it can be solved by using two - pointer approach.
