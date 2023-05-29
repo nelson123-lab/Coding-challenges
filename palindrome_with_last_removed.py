@@ -29,19 +29,18 @@ print(validPalindrome("eddze"))
 
 # This solution exceeds the time limit it can be solved by using two - pointer approach.
 
-def validPalindrome(s: str) -> bool:
-    left, right = 0, len(s) - 1
-    while left < right:
-        if s[left] != s[right]:
-            # try deleting left character
-            temp1 = s[:left] + s[left+1:right+1]
-            if temp1 == temp1[::-1]:
-                return True
-            # try deleting right character
-            temp2 = s[:right] + s[left:right]
-            if temp2 == temp2[::-1]:
-                return True
-            return False
-        left += 1
-        right -= 1
-    return True
+class Solution:
+    def validPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        # Time: O(n)
+        # Space: O(n)
+        left, right = 0, len(s) - 1
+        while left < right:
+            if s[left] != s[right]:
+                one, two = s[left:right], s[left + 1:right + 1]
+                return one == one[::-1] or two == two[::-1]
+            left, right = left + 1, right - 1
+        return True
