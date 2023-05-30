@@ -1,9 +1,13 @@
 def longestCommonPrefix(strs):
+    # Checking whether the strs contain elements
     if not strs:
         return ""
+    # Choosing the prefix as the first word.
     prefix = strs[0]
     for i in range(1, len(strs)):
+        # Checking whether the predix exists starting from the first index.
         while strs[i].find(prefix) != 0:
+            # removing the last element.
             prefix = prefix[:-1]
             if not prefix:
                 return ""
