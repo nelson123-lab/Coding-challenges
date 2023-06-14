@@ -10,7 +10,7 @@ class Solution:
             elif flowerbed[l] == 0 and flowerbed[r] == 0 and flowerbed[m] == 0:
                 flowerbed[r] = 1
                 a += 1
-            elif flowerbed[r] == 0 and flowerbed[m] == 0 and (l == length-2 and r == length-1):
+            elif flowerbed[r] == 0 and flowerbed[m] == 0 and (r == length-2 and m == length-1):
                 flowerbed[m] = 1
                 a += 1
             else:
@@ -18,7 +18,7 @@ class Solution:
             l += 1
             r += 1
             m += 1
-        return a == n
+        return a >= n
 
 ans = Solution()
-print(ans.canPlaceFlowers(flowerbed = [0,0,1,0,1], n = 1))
+print(ans.canPlaceFlowers(flowerbed = [1,0,0,0,1,0,0], n = 2))
