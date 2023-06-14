@@ -3,7 +3,7 @@ class Solution:
         l, r = 0, len(candies)-1
         res = [0]* len(candies)
         max_cand = max(candies)
-        while l<r:
+        while l<=r:
             if candies[l] + extraCandies >= max_cand:
                 res[l] = True
             else:
