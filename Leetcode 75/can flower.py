@@ -3,7 +3,13 @@ class Solution:
         l, r, m = 0, 1, 2
         length = len(flowerbed)
         a = 0
-        while l < len(flowerbed)-2:
+        if length == 1 and flowerbed[l] == 0:
+            flowerbed[l] = 1
+            a += 1
+        elif (length == 2 and flowerbed[l] == 0 and flowerbed[r] == 0):
+            flowerbed[l] == 1
+            a += 1
+        while length > 2 and l < length-2:
             if flowerbed[l] == 0 and flowerbed[r] == 0 and (l == 0 and r == 1):
                 flowerbed[l] = 1
                 a += 1
@@ -21,4 +27,4 @@ class Solution:
         return a >= n
 
 ans = Solution()
-print(ans.canPlaceFlowers(flowerbed = [1,0,0,0,1,0,0], n = 2))
+print(ans.canPlaceFlowers(flowerbed = [0,0], n = 1))
