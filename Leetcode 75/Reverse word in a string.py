@@ -1,6 +1,7 @@
 class Solution:
     def reverseWords(self, s: str) -> str:
-        s_list = s.split(" ")
+        s = s.strip()
+        s_list = s.split()
         l, r = 0, len(s_list) - 1
         while l < r:
             if s_list[l] == "":
@@ -16,3 +17,11 @@ class Solution:
 
 ans = Solution()
 print(ans.reverseWords("  hello world  "))
+
+# This was waste of time. 
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        s = s.strip()
+        words = s.split()
+        words.reverse()
+        return " ".join(words)
