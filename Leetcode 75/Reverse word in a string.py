@@ -1,16 +1,18 @@
 class Solution:
     def reverseWords(self, s: str) -> str:
         s_list = s.split(" ")
-        l,r = 0, len(s_list)-1
-        reversed_list = s_list[::-1]
-        while l<r:
-            if reversed_list[l] == " ":
-                reversed_list.remove(reversed_list[l])
+        l, r = 0, len(s_list) - 1
+        while l < r:
+            if s_list[l] == "":
+                s_list.pop(l)
                 l += 1
-            if reversed_list[r] == " ":
-                reversed_list.remove(reversed_list[r])
+            elif s_list[r] == "":
+                s_list.pop(r)
                 r -= 1
-        return " ".join(reversed_list)
+            else:
+                l += 1
+                r -= 1
+        return " ".join(s_list[::-1]).strip()
 
 ans = Solution()
-print(ans.reverseWords("the sky is  blue"))
+print(ans.reverseWords("  hello world  "))
