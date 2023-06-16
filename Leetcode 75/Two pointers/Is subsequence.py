@@ -4,7 +4,7 @@ class Solution:
         for idx, ele in enumerate(s):
 
             if ele in t and t.index(ele) > prev_index:
-                prev_index = idx
+                prev_index = t.index(ele)
             else:
                 return False
         return True
