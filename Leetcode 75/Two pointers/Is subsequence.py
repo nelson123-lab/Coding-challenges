@@ -8,16 +8,19 @@ class Solution:
             else:
                 return False
         return True
+# The above solution makes the test case true. 
 
-def isSubsequence(self, s: str, t: str) -> bool:
-    i, j  = 0, 0
 
-    while i < len(s) and j < len(t):
-        if s[i] == t[j]:
-            i += 1
-        j += 1
+# The below is a working solution using two pointer approach.
+# def isSubsequence(self, s: str, t: str) -> bool:
+#     i, j  = 0, 0
+
+#     while i < len(s) and j < len(t):
+#         if s[i] == t[j]:
+#             i += 1
+#         j += 1
     
-    return i == len(s)
+#     return i == len(s)
 
 ans = Solution()
-print(ans.isSubsequence(s ="acb", t ="ahbgdc"))
+print(ans.isSubsequence(s ="ab", t ="baab"))
