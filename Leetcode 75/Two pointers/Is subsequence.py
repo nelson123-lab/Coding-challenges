@@ -8,3 +8,6 @@ class Solution:
             else:
                 return False
         return True
+    
+ans = Solution()
+print(ans.isSubsequence(s ="acb", t ="ahbgdc"))
