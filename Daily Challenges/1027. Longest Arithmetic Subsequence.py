@@ -8,3 +8,6 @@ class Solution:
                 diff = nums[j] - nums[i]
                 d[j, diff] = d.get((i, diff), 1) + 1
         return max(d.values())
+
+# Reference:-
+# https://youtu.be/sQznNULe2J0
