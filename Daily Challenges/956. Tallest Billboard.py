@@ -14,3 +14,6 @@ class Solution:
                 new_tallest = max(smaller_rod, tallest)
                 dp[new_diff] = max(dp.get(new_diff, 0), new_tallest)
         return dp[0]
+
+# Reference : Explanation youtube Video
+# https://youtu.be/0aUzm1vhVAQ
