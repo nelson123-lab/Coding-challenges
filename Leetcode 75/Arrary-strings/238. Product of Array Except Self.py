@@ -14,3 +14,6 @@ class Solution:
     
 a = Solution()
 print(a.productExceptSelf([1,2,3,4]))
+
+# Explanation video in youtube
+# https://youtu.be/bNvIQI2wAjk
