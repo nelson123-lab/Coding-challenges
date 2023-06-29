@@ -1,17 +1,23 @@
 class Solution:
     def compress(self, chars) -> int:
-        count = 1
-        initial = chars[0]
-        idx = 1
-        chars1 = chars.copy()
-        for i, e in enumerate(chars, 1):
-            if e == initial:
+        length = len(chars)
+        idx = 0
+        i = 0
+        while i < length:
+            curr_char = chars[i]
+            count = 0
+            while i< length and chars[i] == curr_char:
                 count += 1
-                chars1[idx] = count
-            else:
-                count = 1
-                idx = i+1
-        return chars
+                i += 1
+
+            chars[i] = curr_char
+            idx += 1
+            if count > 1:
+                count_str = str(count)
+                for ch in count_str:
+                    chars[idx] = ch
+                    idx += 1
+
     
 a = Solution()
 print(a.compress(["a","a","b","b","c","c","c"]))
