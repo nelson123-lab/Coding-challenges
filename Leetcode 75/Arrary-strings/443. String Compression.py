@@ -10,14 +10,14 @@ class Solution:
                 count += 1
                 i += 1
 
-            chars[i] = curr_char
+            chars[idx] = curr_char
             idx += 1
             if count > 1:
                 count_str = str(count)
                 for ch in count_str:
                     chars[idx] = ch
                     idx += 1
-
+        return idx
     
 a = Solution()
 print(a.compress(["a","a","b","b","c","c","c"]))
