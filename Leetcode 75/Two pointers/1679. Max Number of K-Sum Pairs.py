@@ -15,3 +15,6 @@ class Solution:
             
         return count
 
+"""
+A Two pointer approach is used here by considering left and right pointer and checking the value of sum each time and increasing the count if the value is equal to k.
+"""
