@@ -33,6 +33,9 @@ def max_subarray_sum(nums):
     return f'Maximum sum is {max_sum} and the subarry with max sum is {nums[s_i:e_i]}'
 
 print(max_subarray_sum([-2, 1, -3, 4, -1, 2, 2, -1, -5, 4]))
+"""OUTPUT
+Maximum sum is 7 and the subarry with max sum is [4, -1, 2, 2]
+"""
 ```
 
 The above program returns the maximum subarray sum and the subarry which containing the maximum sum. 
