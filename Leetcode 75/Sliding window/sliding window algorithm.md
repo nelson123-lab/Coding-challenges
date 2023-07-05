@@ -7,3 +7,28 @@
 - In some cases, the sliding window algorithm may also use the two pointers technique within the window to optimize certain operations. For example, when finding a substring with a specific property, we can use two pointers to expand or contract the window based on the conditions.
 
 - Overall, the sliding window algorithm and the two pointers technique are complementary approaches that can be used together or independently, depending on the problem at hand. Both techniques are valuable tools in a software engineer's problem-solving toolkit.
+
+Example of using sliding window algorithm for Maximum Subarray sum problem.
+```python
+
+def max_subarray_sum(nums):
+    window_start = 0
+    max_sum = float('-inf')
+    current_sum = 0
+
+    for window_end in range(len(nums)):
+        current_sum += nums[window_end]
+
+        # Shrink the window if the current sum becomes negative
+        while current_sum < 0:
+            current_sum -= nums[window_start]
+            window_start += 1
+
+        # Update the maximum sum if the current sum is greater
+        if current_sum > max_sum:
+            max_sum = current_sum
+
+    return max_sum
+```
+
+Here the window size is getting reduced when there negative sum.
