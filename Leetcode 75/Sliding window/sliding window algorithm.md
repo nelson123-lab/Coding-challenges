@@ -15,6 +15,7 @@ def max_subarray_sum(nums):
     window_start = 0
     max_sum = float('-inf')
     current_sum = 0
+    s_i, e_i = 0, 0
 
     for window_end in range(len(nums)):
         current_sum += nums[window_end]
@@ -23,12 +24,15 @@ def max_subarray_sum(nums):
         while current_sum < 0:
             current_sum -= nums[window_start]
             window_start += 1
-
+            s_i = window_start
         # Update the maximum sum if the current sum is greater
         if current_sum > max_sum:
             max_sum = current_sum
+            e_i = window_end + 1
 
-    return max_sum
+    return f'Maximum sum is {max_sum} and the subarry with max sum is {nums[s_i:e_i]}'
+
+print(max_subarray_sum([-2, 1, -3, 4, -1, 2, 2, -1, -5, 4]))
 ```
 
-Here the window size is getting reduced when there is a negative sum.
+The above program returns the maximum subarray sum and the subarry which containing the maximum sum. 
