@@ -9,3 +9,7 @@ class Solution:
             else:
                 return True
         return False
+
+nums = [20,100,10,12,5,13]
+a = Solution()
+print(a.increasingTriplet(nums))
