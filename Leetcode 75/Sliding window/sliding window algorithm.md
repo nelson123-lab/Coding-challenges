@@ -31,4 +31,4 @@ def max_subarray_sum(nums):
     return max_sum
 ```
 
-Here the window size is getting reduced when there negative sum.
+Here the window size is getting reduced when there is a negative sum.
