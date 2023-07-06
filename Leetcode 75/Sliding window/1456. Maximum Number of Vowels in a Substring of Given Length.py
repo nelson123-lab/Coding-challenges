@@ -13,9 +13,12 @@ class Solution:
         maxCount = currCount = v_count(window)
     
         for i in range(k, len(s)):
-            window = window[i-k+1:] + s[i]
+            window = s[i-k+1:i] + s[i]
             currCount = v_count(window)
             maxCount = max(currCount, maxCount)
 
         return maxCount
+
+a = Solution()
+print(a.maxVowels("abciiidef", 3))
 
