@@ -13,3 +13,13 @@ class Solution(object):
 
         return maxSum/k
 
+"""
+The solution works by sliding window appraoch. A window is taken with a width of k and sum is taken.
+Example k = 4
+Choosing different windows with size k and finding the maximum.
+[1,12,-5,-6,50,3]
+ ^        ^
+    ^        ^
+       ^       ^
+       
+"""
