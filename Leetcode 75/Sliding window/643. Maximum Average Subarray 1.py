@@ -1,15 +1,10 @@
-class Solution(object):
-    def findMaxAverage(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: float
-        """
-        maxSum = windowSum = sum(nums[:k])
+class Solution:
+    def findMaxAverage(self, nums: List[int], k: int) -> float:
+        maxSum = windowsum = sum(nums[:k])
 
         for i in range(k, len(nums)):
-            windowSum += nums[i] - nums[i-k]
-            maxSum = max(maxSum, windowSum)
+            windowsum = windowsum + nums[i] - nums[i-k]
+            maxSum = max(maxSum, windowsum)
 
         return maxSum/k
 
@@ -23,6 +18,7 @@ Choosing different windows with size k and finding the maximum sum.
        ^       ^
 The current sum is compared with the maximum sum each time and update the values of maxsum if current sum is greater.
 
+- Instead of taking the entire sum each time. We can add the new elen
 Time Complexity O(n)
 Space Complextiy O(1)
 """
