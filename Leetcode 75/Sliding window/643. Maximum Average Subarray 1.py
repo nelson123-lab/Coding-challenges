@@ -18,7 +18,7 @@ Choosing different windows with size k and finding the maximum sum.
        ^       ^
 The current sum is compared with the maximum sum each time and update the values of maxsum if current sum is greater.
 
-- Instead of taking the entire sum each time. We can add the new elen
+- Instead of taking the entire sum each time. We can add the new element and substract the old me to reduce the time complexity.
 Time Complexity O(n)
 Space Complextiy O(1)
 """
