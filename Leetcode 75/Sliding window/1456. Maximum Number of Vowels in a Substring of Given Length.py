@@ -22,3 +22,7 @@ class Solution:
 a = Solution()
 print(a.maxVowels("abciiidef", 3))
 
+"""
+The above solution exceeded the time limit so we need to optimize the areas where it uses more time. I think I need to remove the 
+function part and count the number of vowels in a simple way.
+"""
