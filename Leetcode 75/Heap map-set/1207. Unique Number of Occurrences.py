@@ -12,4 +12,5 @@ class Solution:
 """
 - Coverting the list to set inorder to reduce the no of elements to iterate.
 - Keeping a count reference and checking whether the no of occurances are already present in the list.
+- If any value's occurance repeat return False.
 """
