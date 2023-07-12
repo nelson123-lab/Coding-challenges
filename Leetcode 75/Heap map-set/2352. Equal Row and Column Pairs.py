@@ -14,4 +14,4 @@ class Solution:
             
         return count
 
-# This solution doesn't work as of now need to fix some erros.
+# This solution doesn't work as of now need to fix some errors.
