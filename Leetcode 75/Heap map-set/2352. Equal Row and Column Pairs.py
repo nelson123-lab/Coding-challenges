@@ -32,3 +32,26 @@ class Solution:
 
 This code efficiently counts the number of equal pairs in the grid by utilizing a dictionary to store the frequency of rows and then using that information to count the equal pairs in the columns.
 """
+
+"""
+# Using a list as a dictionary key
+my_dict = {}
+my_list = [1, 2, 3]
+
+# This will raise a TypeError: unhashable type: 'list'
+my_dict[my_list] = "Value"
+
+# Using a tuple as a dictionary key
+my_dict = {}
+my_tuple = (1, 2, 3)
+
+# This works fine
+my_dict[my_tuple] = "Value"
+```
+
+In the example above, we first try to use a list `my_list` as a key in a dictionary `my_dict`. However, when we try to assign a value to `my_dict[my_list]`, it raises a `TypeError` because lists are mutable and therefore not hashable. Dictionary keys need to be hashable, meaning they should have a fixed value that doesn't change over time.
+
+On the other hand, when we use a tuple `my_tuple` as a key in the dictionary `my_dict`, it works perfectly fine. Tuples are immutable, meaning their values cannot be changed once they are created. This immutability allows tuples to be hashable and used as dictionary keys.
+
+So, in the context of the code you provided, converting the rows of the grid into tuples allows them to be used as keys in the `rows` dictionary, enabling the counting of equal rows efficiently.
+"""
