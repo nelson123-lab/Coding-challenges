@@ -8,3 +8,8 @@ class Solution:
                 res.append(i)
 
         return "".join(res)
+
+"""
+The algorithm works by checking if the current character is a star or not. If it is not a star, it will be added to the results.
+If it is a star the last element from the res array will be removed. It is similar to removing the character close to the star.
+"""
