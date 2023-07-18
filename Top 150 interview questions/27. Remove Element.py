@@ -8,7 +8,6 @@ class Solution:
                 res.append(nums[i])
             else:
                 k += 1
-        # res[length-k:] = ["_"]*k
         return res
 
 a = Solution()
