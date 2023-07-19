@@ -8,3 +8,7 @@ class Solution(object):
             curr = max(curr, nums[i])     
         return True
 
+"""
+The overall idea here is that if the first element of the array is 0 we can't jump to any other array and it will directly return False.
+
+"""
