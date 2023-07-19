@@ -10,5 +10,5 @@ class Solution(object):
 
 """
 The overall idea here is that if the first element of the array is 0 we can't jump to any other array and it will directly return False.
-
+It keeps track of the maximum number of steps that can be taken from the current position using the curr variable.
 """
