@@ -10,3 +10,7 @@ class Solution:
             r = farthest
             res += 1
         return res
+"""
+Time complexity O(n)
+Space Complexity O(1)
+"""
