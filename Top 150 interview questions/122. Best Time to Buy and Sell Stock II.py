@@ -15,4 +15,9 @@ class Solution:
 This is a similar to finding the max profit of stock. Here maximum profit should be obtained by continuesly buying and selling stock.
 The logic is that whenever there is a profit we sell the stock and buy the stock on the same day.
 We add all the profit to the total profit each time when there is a profit.
+
+Time Complexity O(n)
+- The alogrithm only passes once through the input.
+Space Complexity O(1)
+- It uses constant time. The space used is not depended on the input.
 """
