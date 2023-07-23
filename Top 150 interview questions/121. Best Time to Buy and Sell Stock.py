@@ -12,8 +12,12 @@ class Solution:
         return max_profit
 
 """
-Here we don't need to worry about the day when we bought the stock and the day when the stock is sold. We could easily find that if 
+- Here we don't need to worry about the day when we bought the stock and the day when the stock is sold. We could easily find that if 
 the question is asked to return the index of the buying the selling day. 
+- The main goal here is to just find the maximum profit that can be obtained.
 
-The main goal here is to just find the maximum profit that can be obtained.
+Time Complexity O(n)
+- The alogrithm only passes once through the input.
+Space Complexity O(1)
+- It uses constant time. The space used is not depended on the input.
 """
