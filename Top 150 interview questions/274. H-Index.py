@@ -21,5 +21,10 @@ condition checks that. This only works after sorting the algorithm.
 eg: [1,2,4,6,1,5]
 In this example after the iterations the high will become 2 and low will become 3 that's when the while loop stops. The algorithm will 
 return n-low => 6-3 = 3. Here it is returning the highest value that h index can obtain.
+
+Time Complexity O(logn)
+- It is due to binary search. Here the input is halved each time which results in a logarithmic time complexity.
+Space Complexity O(1)
+- Constant space is used. No additional space is used according to the input size.
 """
             
