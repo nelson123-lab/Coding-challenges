@@ -27,3 +27,8 @@ class RandomizedSet:
     def getRandom(self) -> int:
         return random.choice(self.numlist)
 
+"""
+The main complexity in the problem is to do the do the operations in O(1). 
+- When we are using a HashMap inserting into the list after cheking in the hashmap can be done in O(1).
+
+"""
