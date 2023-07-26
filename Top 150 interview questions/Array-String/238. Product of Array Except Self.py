@@ -17,5 +17,5 @@ Since we are not able to use the "/" operator. It becomes harder to do this prob
 This solution works in O(n) since there are no nested for loops.
 There is trick you need to know inorder to solve this problem.
 Reference:-
-
+https://youtu.be/bNvIQI2wAjk
 """
