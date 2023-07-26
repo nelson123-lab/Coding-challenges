@@ -26,9 +26,11 @@ class RandomizedSet:
 
     def getRandom(self) -> int:
         return random.choice(self.numlist)
+        # random.choice(list) is a method to generate random numbers
 
 """
 The main complexity in the problem is to do the do the operations in O(1). 
 - When we are using a HashMap inserting into the list after cheking in the hashmap can be done in O(1).
-
+- Removing in O(1) is a complex process. If we are finding the value from the list and removing it would taking time Complexity more than
+O(1). Instead we swap between the values and delete it and brink it back. This operation can be done in O(1)
 """
