@@ -14,8 +14,13 @@ class Solution:
 
 """
 Since we are not able to use the "/" operator. It becomes harder to do this problem in O(n) time complexity. 
-This solution works in O(n) since there are no nested for loops.
 There is trick you need to know inorder to solve this problem.
+
+Time Complexity O(n)
+- This solution works in O(n) since there are no nested for loops.
+Space Complexity O(n)
+- result = [1]*length uses space according to the input size
+
 Reference:-
 https://youtu.be/bNvIQI2wAjk
 """
