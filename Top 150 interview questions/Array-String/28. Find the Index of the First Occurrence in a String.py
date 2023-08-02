@@ -7,3 +7,8 @@ class Solution:
             if haystack[i:i+ len(needle)] == needle:
                 return i
         return -1
+
+"""
+Time Complexity O(n) where n is the length of the needle.
+Space Complexity O(1)
+"""
