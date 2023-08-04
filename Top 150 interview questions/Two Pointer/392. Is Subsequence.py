@@ -10,3 +10,9 @@ class Solution:
             q += 1
         return p == len(s) # Checking if all the characters of s has been iterated.
 
+"""
+The algorithm uses two pointer approach with two pointers iterating through each of the strings. 
+Time Complexity O(n)
+- Here n is the length of the longer string.
+Space Complexity O(1)
+"""
