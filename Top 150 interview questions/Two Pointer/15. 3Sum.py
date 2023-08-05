@@ -18,3 +18,8 @@ class Solution:
                 else:
                     k -= 1
         return ans
+
+"""
+Time Complexity O(n^2)
+Space Complexity O(1)
+"""
