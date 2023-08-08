@@ -17,6 +17,29 @@ class Solution:
 This solution passes all the test case but the time complexity is O(n^2). Here nested for loop is present. The in and .index operation works in 
 O(n) time complexity and it is within the for loop. Therefore, O(n^2).
 """
+
+# Another Approach
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        res = {}
+        for i in range(len(nums)):
+            res[nums[i]] = i
+        for i in range(len(nums)):
+            diff = target - nums[i]
+            if diff in res:
+                if res[diff] != i:
+                    return [i, res[diff]]
+            else:
+                pass
+        return []
+"""
+Time Complexity O(n)
+- Here there are two for loops that are linear. Hence O(n) + O(n) = O(n)
+Space Complexity O(n)
+- Here we use the space for the input size in the res hashmap to store the indices which is always done even though the target is reached by the first and second index.
+- Below is the optimal solution which is having O(n) as the worst space complexity.
+"""
+
 # Optimal Approach
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
