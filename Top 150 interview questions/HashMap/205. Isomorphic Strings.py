@@ -18,5 +18,7 @@ class Solution:
 
 """
 Time Complexity O(n)
+- Here there is only 1 iteration happening. The time complexity of searching a characters in a set is only O(1).
 Space Complexity O(n)
+- Here a hashmap is used to store the data. The maximum number of characters stored will be n.
 """
