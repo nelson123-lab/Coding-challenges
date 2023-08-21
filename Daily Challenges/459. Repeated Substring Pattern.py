@@ -1,5 +1,29 @@
 class Solution:
     def repeatedSubstringPattern(self, s: str) -> bool:
+        length = len(s)
+        end = 1
+        while end < length//2 + 1:
+            substring = s[0:end]
+            lengthSub = len(substring)
+            if length % lengthSub == 0:
+                coefficient = length// lengthSub
+                if substring*coefficient == s:
+                    return True
+                else:
+                    end += 1
+            else:
+                end += 1
+        return False
+
+"""
+Time Complexity O(n^2)
+- Here the time complexity is due to the extra O(n) time complexity for comparing strings within the while loop
+Space Complexity O(n)
+- Here the space complexity is due to the substring we are using for storing the substrings.
+"""
+
+class Solution:
+    def repeatedSubstringPattern(self, s: str) -> bool:
         if len(s) <= 1:
             return False
         else:
