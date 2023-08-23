@@ -17,8 +17,9 @@ class Solution:
                     return False
         return len(stack) == 0
 """
-Time Complexity O(n^2)
-- Here the O(n) time complexity is due to the opeartion of " if b in '({['. It works within a for loop. Which results in overall time compelxity of O(n^2)
+Time Complexity O(n)
+- Here the O(n) time complexity is due to the opeartion of " if b in '({['. It works within a for loop. Which results in overall time complexity is O(n) still because.
+  even though its O(n) for searching within the string, the string won't change it's length according to the input. '({[' and ')}]' are always of lenght 3. 
 - A list is used to iterate instead of string as it iterates faster.
 Space Complexity O(n)
 - The space compelxity is due to the bracket list that is created according to the input. The stack list can also contribute to the space complexity but it's mainly due to the bracket list.
