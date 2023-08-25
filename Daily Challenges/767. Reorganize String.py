@@ -18,3 +18,9 @@ class Solution:
                 max_heap.append((freq, c))
 
         return result
+"""
+Time compelxity O(nlog(n))
+-This is because the Counter function iterates over the string to count the frequency of each character, and heapify takes O(n) time.
+Space Complexity O(n)
+- The space depends on the input.
+"""
