@@ -9,3 +9,9 @@ class Solution:
                     LIS[i]=max((LIS[i]), (LIS[j]+1))
         
         return max(LIS)
+
+"""
+Time Compelxity O(n^2)
+
+Space Complexity O(n)
+"""
