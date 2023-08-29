@@ -1,46 +1,24 @@
-class Solution(object):
-    def decodeString(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
-        stack = []
-        for i in range(len(s)):
-            if not stack:
-                stack.append(s[i])
-                continue
-            if s[i] == ']':
-                currStr = ''
-                while stack:
-                    currChar = stack.pop()
-                    if currChar == '[':
-                        count = 0
-                        power = 1
-                        while stack:
-                            n = stack.pop()
-                            if not n.isnumeric():
-                                stack.append(n)
-                                break
-                            count += int(n)*power
-                            power *= 10
-                        currStr *= count
-                        stack.extend([c for c in currStr])
-                        break
-                    currStr = currChar + currStr
+class Solution:
+    def decodeString(self, s: str) -> str:
+
+        stack=[]
+
+        for c in s:
+            if c!=']':
+                stack.append(c)
             else:
-                stack.append(s[i])
+                res=''
+                while stack[-1]!='[':
+                    res+=stack.pop()
+                stack.pop()
+                n=''
+                while len(stack)!=0 and stack[-1].isdigit()==True:
+                    n+=stack.pop()
+                stack.append(res*int(n[::-1]))
 
-        return ''.join(stack)
+        return ''.join([word[::-1] for word in stack])
 
-
-def decode(self, s: str) -> List[str]:
-    decoded_strs = []
-    i = 0
-    while i < len(s):
-        j = i
-        while s[j] != "#":
-            j += 1
-        length = int(s[i:j])
-        decoded_strs.append(s[j + 1:j + length + 1])
-        i = j + length + 1
-    return decoded_strs
+"""
+Time Complexity O(n)
+Space COmpelxity O(n)
+"""
