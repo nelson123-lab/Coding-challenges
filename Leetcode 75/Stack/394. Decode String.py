@@ -1,24 +1,29 @@
 class Solution:
     def decodeString(self, s: str) -> str:
-
-        stack=[]
-
-        for c in s:
-            if c!=']':
-                stack.append(c)
+        stack = []
+        for char in s:
+            if char != ']':
+                stack.append(char)
             else:
-                res=''
-                while stack[-1]!='[':
-                    res+=stack.pop()
+                sub = ""
+                while stack[-1] != '[':
+                    sub = stack.pop() + sub
                 stack.pop()
-                n=''
-                while len(stack)!=0 and stack[-1].isdigit()==True:
-                    n+=stack.pop()
-                stack.append(res*int(n[::-1]))
 
-        return ''.join([word[::-1] for word in stack])
+                num = ""
+                while stack and stack[-1].isdigit():
+                    num = stack.pop() + num
+                
+                stack.append(int(num) * sub)
+        return "".join(stack)
 
 """
+We won't be able to use no = int(stack.pop()) because the number won't always be 1 digit. 
+for example "100[leetcode]" 
+- In this case we have to make the num as a string then only we will be able to get the 100 as the coefficient of mulitplication.
+
 Time Complexity O(n)
+- Only 1 iteration is happening. The while operations are of constant time and the worst case in O(n). Thus the total time complexity is O(n).
 Space COmpelxity O(n)
+- The space complexity is due to the stack used. The maximum space can depend on the input string.
 """
