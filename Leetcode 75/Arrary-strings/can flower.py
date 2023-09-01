@@ -36,3 +36,34 @@ class Solution:
 
 ans = Solution()
 print(ans.canPlaceFlowers(flowerbed = [0,0,0,0,1], n = 2))
+
+"""
+Time Complexity O(n)
+Space Complexity O(1)
+"""
+
+class Solution:
+    def canPlaceFlowers(self, flowerbed, n):
+        f = [0] + flowerbed + [0]
+
+        for i in range(1, len(f)-1):
+            if f[i+1] == 0 and f[i] == 0 and f[i-1] == 0:
+                f[i] = 1
+                n -= 1
+            else: pass
+        return n <= 0
+
+"""
+Here we are appending 0 on the right and left side of the flowerbed array so that we could check the left and right spaces of each flowerbed everytime.
+Time Complexity O(n)
+- Here the algorithm iterates through the input list.
+Space Complexity O(1)
+- Here the algorithm works in constant time.
+"""
+
+
+
+
+
+
+
