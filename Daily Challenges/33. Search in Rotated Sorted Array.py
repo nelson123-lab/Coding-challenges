@@ -1,5 +1,16 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
+        if target not in nums:
+            return -1
+        else:
+            return nums.index(target)
+"""
+Time COmplexity O(n)
+Space Complexity O(1)
+"""
+
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
         left, right = 0, len(nums) - 1
 
         while left <= right:
