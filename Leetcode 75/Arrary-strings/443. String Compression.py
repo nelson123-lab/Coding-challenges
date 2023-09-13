@@ -25,28 +25,35 @@ print(a.compress(["a","a","b","b","c","c","c"]))
 """
 The above solution is not accepted. Thus we need to edit the values of the input list within itself.
 """
+
 class Solution:
     def compress(self, chars) -> int:
-        length = len(chars)
-        idx = 0
-        i = 0
-        while i < length:
-            curr_char = chars[i]
+        len_chars = len(chars)
+        if not chars:
+            return 0
+        if len_chars == 0 or len_chars == 1:
+            return len_chars
+        
+        idx = 0 # Index for the modification of the array
+        i = 0 # Index for iteration of the array
+        
+
+        while i < len_chars:
             count = 0
+            curr = chars[i]
             # Checking for duplicates
-            while i< length and chars[i] == curr_char:
+            while i < len_chars and chars[i] == curr:
                 count += 1
                 i += 1
             # Assigning the duplicates count as strings to the array
-            chars[idx] = curr_char
+            chars[idx] = curr
             idx += 1
             # if ['a', 'b'] we need to return only ['a', 'b'] and not ['a', '1', 'b','2']
             if count > 1:
-                count_str = str(count)
                 # For handling the case when count becomes more than one digit number.
                 # '12' as '1', '2'
-                for ch in count_str:
-                    chars[idx] = ch
+                for digit in str(count):
+                    chars[idx] = digit
                     idx += 1
         return idx
     
@@ -55,5 +62,7 @@ print(a.compress(["a","a","b","b","c","c","c"]))
 
 """"
 Time Compelxity O(n)
+- There is only one iteration happening through the entire array.
 Space Complexity O(1)
+- No additional space is used here.
 """
