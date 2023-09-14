@@ -8,7 +8,27 @@ class Solution:
 Time COmplexity O(n)
 Space Complexity O(1)
 """
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+       left, right = 0, len(nums)-1
+       while left <= right:
+            if nums[left] == target:
+               return left
+            elif nums[right] == target:
+                return right
+            else:
+                left += 1
+                right -= 1
+       return -1
 
+"""
+Time Complexity O(n)
+Space Complexity O(1)
+"""
+
+"""
+The below solution uses binary search to acheive a time complexity of O(logn)
+"""
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         left, right = 0, len(nums) - 1
@@ -32,6 +52,6 @@ class Solution:
         return -1
 
 """
-Time Complexity O(n)
+Time Complexity O(logn)
 Space Complexity O(1)
 """
