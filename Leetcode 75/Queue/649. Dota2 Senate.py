@@ -1,15 +1,24 @@
 class Solution:
     def predictPartyVictory(self, senate: str) -> str:
-        senate = list(senate) 
-        R, D = deque(), deque()
+        # Converting the string to a list inorder to do list operations
+        senate = list(senate)
 
+        # Making two queue for keeping track of Indices of both Radiant and Dire
+        R = deque()
+        D = deque()
+
+        # Appending the indieces of both Radiant and Dire into there respective queues
+        # This is done to keep track of the order in which they appear. The Initially appeared Radiant can remove the power of later appreared Dire. 
+        # "RDD" here R removes the power of D and the later appeared D removes the power of R. Thus we should return D.
         for idx, ele in enumerate(senate):
             if ele == "R":
                 R.append(idx)
             else:
                 D.append(idx)
         
+        # Checking if both R and D exists.
         while R and D:
+            # Taking the first elements and comparing with each other to check which one came first.
             rTurn = R.popleft()
             dTurn = D.popleft()
 
