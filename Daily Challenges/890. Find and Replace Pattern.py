@@ -33,3 +33,31 @@ Time Complexity O(n*m)
 Space Complexity O(n*m)
 """
 
+"""
+Below is the second approach that saves more space.
+"""
+class Solution:
+    def pattern_check(self, s, p):
+        d1, d2 = {}, {}
+        for a, b in zip(s, p):
+            if a not in d1: d1[a] = b
+            if b not in d2: d2[b] = a
+
+            if a!= d2[b] or b!= d1[a]:
+                return False
+        return True
+
+    def findAndReplacePattern(self, words: List[str], pattern: str) -> List[str]:
+        output = []
+        for word in words:
+            if self.pattern_check(word, pattern):
+                output.append(word)
+            else: pass
+        return output
+"""
+Here we are using two hashmaps to keep track of the pattern and mapping the word and the pattern together and if the same character is not mapping to the same character later within the word leads to an False result.
+
+Time complexity: O(N*M)
+Space complexity: O(M)
+- Here the space is used only for storing the pattern within the dictionary. The output list is not considered as extra space since the problem requires us to output like that.
+"""
