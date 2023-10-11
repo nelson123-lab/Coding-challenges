@@ -11,4 +11,8 @@ class Solution:
         for i in range(len(matrix)):
             for j in range(len(matrix[i])):
                 matrix[i][j] = res[i][j]
-        
+
+"""
+TIme Complexity O(n^2)
+Space Complexity O(n^2)
+"""
