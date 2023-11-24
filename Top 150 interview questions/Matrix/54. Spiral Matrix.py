@@ -1,46 +1,42 @@
 class Solution:
-    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
-        seen = set()
+    def spiralOrder(self, matrix: list[list[int]]) -> list[int]:
+        top, bottom = 0, len(matrix)
+        left, right = 0, len(matrix[0])
+        output = []
 
-        top = 0
-        right = len(matrix[0]) - 1
-        bottom = len(matrix) - 1
-        left = 0
+        # while len(output) < rows * cols: This while condition could also be used since we know the expected length of output
+        while top < bottom and left < right:
+            #Print top row, left to right
+            for i in range(left, right):
+                output.append(matrix[top][i])
+            top += 1
 
-        res = []
+            #Print right column, top to bottom
+            for i in range(top, bottom):
+                output.append(matrix[i][right - 1])
+            right -= 1
 
-        while len(seen) != len(matrix[0]) * len(matrix):
-            # go right, boundary is left and right
-            p = left
-            while p <= right and len(seen) != len(matrix[0]) * len(matrix):
-                res.append(matrix[top][p])
-                seen.add((top, p))
-                p += 1
-            top += 1 # we don't return to the top row
+            #Print bottom row, right to left
+                #This loop has a subtle problem if we've already printed the last row on line 14!
+                #Basically, if we've printed the last row in the middle of the matrix up above, we haven't updated left variable, we only updated top
+                #which might cause part of that row to get printed again in this loop
+            #To solve the above problem, we also check the top variable to make sure the same row doesn't get printed twice
+            if top < bottom:
+                for i in range(right - 1, left - 1, -1):
+                    output.append(matrix[bottom - 1][i])
+                bottom -= 1
 
-            # go down, boundaries is top and bottom
-            p = top
-            while p <= bottom and len(seen) != len(matrix[0]) * len(matrix):
-                res.append(matrix[p][right])
-                seen.add((p, right))
-                p += 1
-            right -= 1 # we don't return to this right row
+            #Print left column, bottom to top
+                #This loop also has a subtle problem similar to what was described above
+            #Get around this problem by comparing left and right beforehand
+            if left < right:
+                for i in range(bottom - 1, top - 1, -1):
+                    output.append(matrix[i][left])
+                left += 1
+        
+        return output
 
-            # go left
-            p = right
-            while p >= left and len(seen) != len(matrix[0]) * len(matrix):
-                res.append(matrix[bottom][p])
-                seen.add((bottom, p))
-                p -= 1
-            bottom -= 1 # we don't return to the top
-
-            # go up, boundaries are top and bottom
-            p = bottom
-            while p >= top and len(seen) != len(matrix[0]) * len(matrix):
-                res.append(matrix[p][left])
-                seen.add((p, left))
-                p -= 1
-            left += 1
-            
-        return res
-            
+"""
+Time Complexity O(n*m)
+Space Complexity O(n)
+"""
