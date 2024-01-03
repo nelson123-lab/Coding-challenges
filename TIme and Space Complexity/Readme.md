@@ -1,15 +1,14 @@
 Time and Space Complexitiy of different Sorting Algorthims
 
-Sorting Algorithm | Time Complexity | Space Complexity
------------------ | --------------- | ----------------
-Bubble Sort      | O(n^2)          | O(1)
-Selection Sort   | O(n^2)          | O(1)
-Insertion Sort   | O(n^2)          | O(1)
-Merge Sort       | O(n log n)      | O(n)
-Quick Sort       | O(n log n)      | O(log n)
-Heap Sort        | O(n log n)      | O(1)
-Radix Sort       | O(nk)           | O(n+k)
-Tim Sort         | O(n log n)      | O(n)
+| Sorting Algorithm | Best Case Time Complexity | Average Case Time Complexity | Worst Case Time Complexity | Space Complexity |
+|-------------------|---------------------------|------------------------------|----------------------------|------------------|
+| Bubble Sort       | \( O(n) \)                | \( O(n^2) \)                 | \( O(n^2) \)               | \( O(1) \)       |
+| Insertion Sort    | \( O(n) \)                | \( O(n^2) \)                 | \( O(n^2) \)               | \( O(1) \)       |
+| Selection Sort    | \( O(n^2) \)              | \( O(n^2) \)                 | \( O(n^2) \)               | \( O(1) \)       |
+| Quick Sort        | \( O(n \log n) \)         | \( O(n \log n) \)            | \( O(n^2) \)               | \( O(\log n) \)  |
+| Heap Sort         | \( O(n \log n) \)         | \( O(n \log n) \)            | \( O(n \log n) \)          | \( O(1) \)       |
+| Merge Sort        | \( O(n \log n) \)         | \( O(n \log n) \)            | \( O(n \log n) \)          | \( O(n) \)       |
+| Tim Sort          | \( O(n) \)                | \( O(n \log n) \)            | \( O(n \log n) \)          | \( O(n) \)       |
 
 Note: 
 - "n" represents the number of elements in the array.
