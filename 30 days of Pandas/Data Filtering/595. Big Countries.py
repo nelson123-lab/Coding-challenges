@@ -7,3 +7,8 @@ def big_countries(world: pd.DataFrame) -> pd.DataFrame:
     return bigCountries[['name', 'population', 'area']]
 
 
+"""
+Here the syntax when you have 2 condition for two columns
+bigCountries = df[(df['column1'] >= 3000000) | (df['column2'] >= 25000000)]
+bigCountries = df[(condition A) | (condition B)]  - This will create a new dataframe that contains all the columns values that satisfies the conditions.
+"""
