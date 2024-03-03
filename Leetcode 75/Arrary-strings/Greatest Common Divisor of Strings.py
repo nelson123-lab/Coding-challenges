@@ -11,3 +11,10 @@ class Solution:
             return ""
         length = self.gcd(len(str1), len(str2))
         return str1[:length]
+
+
+"""
+Here the time complexity of the algorithm depends upon the minimum len of the string among str1 ans str2.
+- Time complexity: O(log(min(len(str1), len(str2))))
+- Space complexity: O(len(str1) + len(str2))
+"""
