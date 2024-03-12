@@ -20,3 +20,25 @@ we are able to find the solution.
 """
 ans = Solution()
 print(ans.moveZeroes([0,1,0,3,0,0,12]))
+
+# Approach 2 similar to 1 but more understandable.
+class Solution(object):
+    def moveZeroes(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """
+        zero, non_zero = 0, 0
+        while non_zero < len(nums):
+            if nums[non_zero] != 0:
+                nums[zero], nums[non_zero] = nums[non_zero], nums[zero]
+                non_zero += 1
+                zero += 1
+            else: 
+                non_zero += 1
+        return nums
+
+"""
+Time Complexity O(n)
+Space Complexity O(1)
+"""
