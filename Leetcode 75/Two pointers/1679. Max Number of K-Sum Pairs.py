@@ -1,20 +1,28 @@
-class Solution:
-    def maxOperations(self, nums: List[int], k: int) -> int:
-        l, r = 0, len(nums)-1
+class Solution(object):
+    def maxOperations(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
         nums.sort()
-        count = 0
-        while l<r:
-            if nums[l] + nums[r] == k:
-                count += 1
-                l += 1
-                r -= 1
-            elif nums[l] + nums[r] > k:
-                r -= 1
+        left, right = 0, len(nums) - 1
+        output = 0
+        while left < right:
+            currSum = nums[left] + nums[right]
+            if currSum == k:
+                output += 1
+                left += 1
+                right -= 1
+            elif currSum < k:
+                left += 1
             else:
-                l += 1
-            
-        return count
+                right -= 1
+        return output
 
 """
-A Two pointer approach is used here by considering left and right pointer and checking the value of sum each time and increasing the count if the value is equal to k.
+- Here we are using two pointer to keep track of left and right pointers to check if the sum is equal to the K.
+- Whenever there is a sum which is equal to k the left pointer should be increased and right pointer should be decreased.
+Time COmplexity O(nlogn)
+Space Complexity O(1)
 """
