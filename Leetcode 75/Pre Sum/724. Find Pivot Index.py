@@ -26,3 +26,23 @@ print(a.pivotIndex([1,7,3,6,5,6]))
 Using the principle of sliding window to reduce the complextiy of the algorithm. Instead of checking the leftSum and rightSum for each index we can 
 add and substract the elements from the previous index to the leftSum and the substract the current index value from the rightSum.
 """
+
+class Solution(object):
+    def pivotIndex(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        total = sum(nums)
+        left = 0
+        for i , num in enumerate(nums):
+            if left == total -left - num:
+                return i
+            left += num
+        return -1
+
+"""
+Here the left sum is compared with the total sum each time to find the index of pivot.
+Time Complexity O(n)
+Space Complexity O(1)
+"""
