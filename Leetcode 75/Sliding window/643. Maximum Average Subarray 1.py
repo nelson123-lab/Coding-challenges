@@ -22,3 +22,22 @@ The current sum is compared with the maximum sum each time and update the values
 Time Complexity O(n)
 Space Complextiy O(1)
 """
+
+class Solution(object):
+    def findMaxAverage(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: float
+        """
+        subAsum = sum(nums[0:k])
+        maxAvg = max(-float('inf'), float(subAsum)/k)
+        for i in range(len(nums)-k):
+            subAsum = subAsum - nums[i] + nums[k+i]
+            maxAvg = max(maxAvg, float(subAsum)/k)
+        return maxAvg
+
+"""
+Time Complexity O(n)
+Space Complexity O(1)
+"""
