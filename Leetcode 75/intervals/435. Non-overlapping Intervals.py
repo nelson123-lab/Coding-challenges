@@ -4,14 +4,17 @@ class Solution(object):
         :type intervals: List[List[int]]
         :rtype: int
         """
-        intervals.sort(key=lambda interval: interval[1])
-        end = intervals[0][1]
-        count = len(intervals) - 1
+        intervals.sort()
+        output = 0
+        prev_s, prev_e = intervals[0][0], intervals[0][1]
         for i in range(1, len(intervals)):
-            if intervals[i][0] >= end:
-                end = intervals[i][1]
-                count -= 1
-        return count
+            start, end = intervals[i]
+            if start >= prev_e:
+                prev_e = end
+            else:
+                output += 1
+                prev_e = min(end, prev_e)
+        return output
 
 """
 Time Complexity O(nlogn)
