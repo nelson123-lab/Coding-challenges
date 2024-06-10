@@ -1,73 +1,69 @@
-# Important Leetcode problems
+# Coding Challenges Repository
 
-### Array and String Manipulation
-1. **3 Sum (#15)**
-2. **Intersection of Two Arrays (#349)**
-3. **Find K Pairs with Smallest Sums (#373)**
-4. **Maximum Subarray (#53)**
-5. **Move Zeroes (#283)**
-6. **Next Permutation (#31)**
-7. **ZigZag Conversion (#6)**
+Welcome to the Coding Challenges Repository! This repository contains various coding challenges categorized by topic, difficulty, and platform. Each folder contains specific challenges that you can work on to improve your coding skills.
 
-### Linked List
-1. **Linked List Cycle (#141)**
-2. **Linked List Cycle II (#142)**
-3. **Remove Duplicates from Sorted List (#83)**
-4. **Remove Duplicates from Sorted List II (#82)**
-5. **Reverse Linked List (#206)**
-6. **Add Two Numbers (#2)**
+## Table of Contents
 
-### Binary Tree
-1. **Maximum Depth of Binary Tree (#104)**
-2. **Minimum Depth of Binary Tree (#111)**
-3. **Merge Two Binary Trees (#617)**
-4. **Convert Sorted Array to Binary Search Tree (#108)**
-5. **Path Sum (#112)**
-6. **Binary Tree Level Order Traversal (#102)**
-7. **Binary Tree Zigzag Level Order Traversal (#103)**
-8. **Validate Binary Search Tree (#98)**
-9. **Construct Binary Tree from Preorder and Inorder Traversal (#105)**
+### Python Programming Challenges
+- [Time and Space Complexity Notes](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/TIme%20and%20Space%20Complexity)
+- [Blind 75](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/Blind%2075)
+- [Leetcode 75](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/Leetcode%2075)
+- [Top 150 Interview Questions](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/Top%20150%20interview%20questions)
+- [Microsoft Usually Asked Questions](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/Microsoft%20usually%20asked%20questions)
+- [Daily Challenges](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/Daily%20Challenges)
+- [Practice Problems](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/Practice%20Problems)
 
-### Binary Search and Sorting
-1. **Kth Largest Element in a Stream (#703)**
-2. **Top K Frequent Elements (#347)**
-3. **Binary Search (#704)**
-4. **Search Insert Position (#35)**
-5. **Find Minimum in Rotated Sorted Array (#153)**
-6. **Search in Rotated Sorted Array (#33)**
-7. **Capacity To Ship Packages Within D Days (#1011)**
+### Pandas Programming Challenges
+- [Introduction to Pandas](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/Introduction%20to%20Pandas)
+- [30 Days of Pandas](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/30%20days%20of%20Pandas)
 
-### Dynamic Programming
-1. **Longest Increasing Subsequence (#300)**
-2. **Unique Paths (#62)**
-3. **Unique Paths II (#63)**
-4. **House Robber (#198)**
-5. **House Robber II (#213)**
-6. **Best Time to Buy and Sell Stock (#121)**
-7. **Best Time to Buy and Sell Stock II (#122)**
-8. **Coin Change (#322)**
-9. **Word Break (#139)**
+### SQL Programming Challenges
+- [SQL 50](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/SQL%2050)
+- [SQL DataLemur](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/SQL%20DataLemur)
+- [SQL Database](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/SQL%20Database)
 
-### String and Parsing Problems
-1. **Valid Parentheses (#20)**
-2. **Generate Parentheses (#22)**
-3. **Unique Email Addresses (#929)**
-4. **First Unique Character in a String (#387)**
-5. **String to Integer (atoi) (#8)**
+## How to Use This Repository
 
-### Graph and Matrix
-1. **Number of Islands (#200)**
-2. **Max Area of Island (#695)**
-3. **Number of Connected Components in an Undirected Graph (#323)**
-4. **Word Ladder (#127)**
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/nelson123-lab/Leetcode_problems_solved.git
+   cd Leetcode_problems_solved
+   ```
 
-### Miscellaneous
-1. **Group Anagrams (#49)**
-2. **Subarray Sum Equals K (#560)**
-3. **Paint Fence (#276)**
-4. **Meeting Rooms (#252)**
-5. **Meeting Rooms II (#253)**
-6. **Is Subsequence (#392)**
-7. **Longest Substring Without Repeating Characters (#3)**
-8. **Minimum Size Subarray Sum (#209)**
-9. **Combination Sum (#39)**
+2. **Choose Any Challenge**
+   - Navigate to the folder containing the challenge you wish to solve.
+   - Solve the question and compare your solution with the provided Solution Script.
+   - If you find an alternative method or a more optimized solution, you are encouraged to create a pull request. Please include an explanation of your approach, highlighting the time complexity and space complexity of your solution.
+
+### Contributing
+
+We welcome contributions to this repository. If you would like to contribute, please follow these guidelines:
+
+- **Fork the Repository**
+  - Click the "Fork" button at the top right of this page to create a copy of this repository in your GitHub account.
+
+- **Create a New Branch**
+  ```sh
+  git checkout -b your-branch-name
+  ```
+
+- **Make Your Changes**
+  - Implement your solution or improvements.
+  - Ensure your code is well-documented.
+
+- **Commit Your Changes**
+  ```sh
+  git add .
+  git commit -m "Description of your changes"
+  ```
+
+- **Push to Your Fork**
+  ```sh
+  git push origin your-branch-name
+  ```
+
+- **Create a Pull Request**
+  - Open a pull request to the main branch of this repository.
+  - Provide a clear and concise description of your changes and the reasons for them.
+  - Include any relevant details about time complexity and space complexity improvements.
+
