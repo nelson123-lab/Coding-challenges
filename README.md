@@ -7,7 +7,7 @@ Welcome to the Coding Challenges Repository! This repository contains various co
 ### Python Programming Challenges
 - [Time and Space Complexity Notes](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/TIme%20and%20Space%20Complexity)
 - [Blind 75](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/Blind%2075)
-- [Leetcode 75](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/Leetcode%2075)
+- [Leetcode 75](https://github.com/nelson123-lab/Coding-challenges/blob/9bf355b07448040d901060716b8a348419a214e3/Leetcode%2075/Readme.md)
 - [Top 150 Interview Questions](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/Top%20150%20interview%20questions)
 - [Microsoft Usually Asked Questions](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/Microsoft%20usually%20asked%20questions)
 - [Daily Challenges](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/Daily%20Challenges)
@@ -18,7 +18,7 @@ Welcome to the Coding Challenges Repository! This repository contains various co
 - [30 Days of Pandas](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/30%20days%20of%20Pandas)
 
 ### SQL Programming Challenges
-- [SQL 50](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/SQL%2050)
+- [SQL 50](https://github.com/nelson123-lab/Coding-challenges/blob/5d768d99d2d12b81cc7c10f7b394f6b552989f87/SQL%2050/Readme.md)
 - [SQL DataLemur](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/SQL%20DataLemur)
 - [SQL Database](https://github.com/nelson123-lab/Leetcode_problems_solved/tree/0b33ac5d61a06e8400477dedfaaf8f97d3d155bf/SQL%20Database)
 
