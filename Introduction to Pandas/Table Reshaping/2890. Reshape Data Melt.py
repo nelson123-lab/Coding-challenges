@@ -6,7 +6,7 @@ def meltTable(report: pd.DataFrame) -> pd.DataFrame:
 
 
 """
-Here we are using the melt function to convert the data from wide format to long format. In several ways it's opposite of pivot table.
+Here we are using the melt function to convert the data from wide format to long format. In several ways, it's the opposite of a pivot table.
 
 Pivot:
 Purpose: Converts data from a "long" format to a "wide" format.
