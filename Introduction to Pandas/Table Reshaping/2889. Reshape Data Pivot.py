@@ -5,6 +5,6 @@ def pivotTable(weather: pd.DataFrame) -> pd.DataFrame:
     return weather_pivot
 
 """
-A pivot table is normally used in data analysis to summarize large dataset. Here we are creating a pivot table with index as month and different cities as columns so
+A pivot table is normally used in data analysis to summarize large datasets. Here we are creating a pivot table with the index as a month and different cities as columns so
 that we can understand the temperature of different cities in each month.
 """
