@@ -10,7 +10,7 @@ ORDER BY num DESC
 LIMIT 1;
 
 /*
--- Here person with the most number of friends can be found by combining the requester_id and accepter_id and then GROUP BY id.
+-- Here person with the most friends can be found by combining the requester_id and accepter_id and then GROUP BY id.
 -- RequestAccepted table:
 +--------------+-------------+-------------+
 | requester_id | accepter_id | accept_date |
