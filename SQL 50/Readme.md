@@ -16,11 +16,11 @@ Welcome to the SQL practice problems repository. This repository contains variou
 
 | Problem                                         | Question Link          | Solution Link        | Difficulty |
 |-------------------------------------------------|------------------------|----------------------|------------|
-| Recyclable and Low Fat Products                | [Question](link_to_question)  | [Solution](link_to_solution) | Easy       |
-| Find Customer Referee                          | [Question](link_to_question)  | [Solution](link_to_solution) | Easy       |
-| Big Countries                                  | [Question](link_to_question)  | [Solution](link_to_solution) | Easy       |
-| Article Views I                                | [Question](link_to_question)  | [Solution](link_to_solution) | Easy       |
-| Invalid Tweets                                 | [Question](link_to_question)  | [Solution](link_to_solution) | Easy       |
+| Recyclable and Low Fat Products                | [Question](https://leetcode.com/problems/recyclable-and-low-fat-products/description/?envType=study-plan-v2&envId=top-sql-50)  | [Solution](https://github.com/nelson123-lab/Coding-challenges/blob/5d768d99d2d12b81cc7c10f7b394f6b552989f87/SQL%2050/SELECT/1757.%20Recyclable%20and%20Low%20Fat%20Products.sql) | Easy       |
+| Find Customer Referee                          | [Question](https://leetcode.com/problems/find-customer-referee/description/?envType=study-plan-v2&envId=top-sql-50)  | [Solution](https://github.com/nelson123-lab/Coding-challenges/blob/5d768d99d2d12b81cc7c10f7b394f6b552989f87/SQL%2050/SELECT/584.%20Find%20Customer%20Referee.sql) | Easy       |
+| Big Countries                                  | [Question](https://leetcode.com/problems/big-countries/description/?envType=study-plan-v2&envId=top-sql-50)  | [Solution](https://github.com/nelson123-lab/Coding-challenges/blob/5d768d99d2d12b81cc7c10f7b394f6b552989f87/SQL%2050/SELECT/595.%20Big%20Countries.sql) | Easy       |
+| Article Views I                                | [Question](https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=top-sql-50)  | [Solution](https://github.com/nelson123-lab/Coding-challenges/blob/5d768d99d2d12b81cc7c10f7b394f6b552989f87/SQL%2050/SELECT/1148.%20Article%20Views%20I.sql) | Easy       |
+| Invalid Tweets                                 | [Question](https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50)  | [Solution](https://github.com/nelson123-lab/Coding-challenges/blob/5d768d99d2d12b81cc7c10f7b394f6b552989f87/SQL%2050/SELECT/1683.%20Invalid%20Tweets.sql) | Easy       |
 
 ## Basic Joins
 
