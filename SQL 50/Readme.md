@@ -65,10 +65,10 @@ Welcome to the SQL practice problems repository. This repository contains variou
 
 | Problem                                         | Question Link          | Solution Link        | Difficulty |
 |-------------------------------------------------|------------------------|----------------------|------------|
-| The Number of Employees Which Report to Each Employee | [Question](link_to_question)  | [Solution](link_to_solution) | Easy       |
-| Primary Department for Each Employee            | [Question](link_to_question)  | [Solution](link_to_solution) | Easy       |
-| Triangle Judgement                              | [Question](link_to_question)  | [Solution](link_to_solution) | Easy       |
-| Consecutive Numbers                             | [Question](link_to_question)  | [Solution](link_to_solution) | Medium     |
+| The Number of Employees Which Report to Each Employee | [Question](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/description/?envType=study-plan-v2&envId=top-sql-50)  | [Solution](https://github.com/nelson123-lab/Coding-challenges/blob/55edd697b4823bf5e599799707235f7a5db94d9b/SQL%2050/ADVANCED%20SELECT%20AND%20JOINS/1731.%20The%20Number%20of%20Employees%20Which%20Report%20to%20Each%20Employee.sql) | Easy       |
+| Primary Department for Each Employee            | [Question](https://leetcode.com/problems/primary-department-for-each-employee/description/?envType=study-plan-v2&envId=top-sql-50)  | [Solution](https://github.com/nelson123-lab/Coding-challenges/blob/55edd697b4823bf5e599799707235f7a5db94d9b/SQL%2050/ADVANCED%20SELECT%20AND%20JOINS/1789.%20Primary%20Department%20for%20Each%20Employee.sql) | Easy       |
+| Triangle Judgement                              | [Question](https://leetcode.com/problems/triangle-judgement/description/?envType=study-plan-v2&envId=top-sql-50)  | [Solution](https://github.com/nelson123-lab/Coding-challenges/blob/55edd697b4823bf5e599799707235f7a5db94d9b/SQL%2050/ADVANCED%20SELECT%20AND%20JOINS/610.%20Triangle%20Judgement.sql) | Easy       |
+| Consecutive Numbers                             | [Question](https://leetcode.com/problems/consecutive-numbers/description/?envType=study-plan-v2&envId=top-sql-50)  | [Solution](https://github.com/nelson123-lab/Coding-challenges/blob/55edd697b4823bf5e599799707235f7a5db94d9b/SQL%2050/ADVANCED%20SELECT%20AND%20JOINS/180.%20Consecutive%20Numbers.sql) | Medium     |
 | Product Price at a Given Date                   | [Question](link_to_question)  | [Solution](link_to_solution) | Medium     |
 | Last Person to Fit in the Bus                   | [Question](link_to_question)  | [Solution](link_to_solution) | Medium     |
 | Count Salary Categories                         | [Question](link_to_question)  | [Solution](link_to_solution) | Medium     |
