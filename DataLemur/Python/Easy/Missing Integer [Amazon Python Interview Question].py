@@ -11,3 +11,13 @@ Explanation
 Time Complexity O(n logn)
 Space Complexity O(n)
 """
+
+def missing_int(input: list[int])-> int:
+    gauss_sum = len(input)*(len(input)+1) // 2
+    actual_sum = sum(input)
+    return gauss_sum - actual_sum
+
+"""
+- Here gauss sum is the sum of n numbers from 1 to n using the formula n(n+1)//2
+- If we substract the actual sum from the gauss sum we get the number.
+"""
