@@ -1,13 +1,24 @@
-// Bottom up computation - O(n) time, O(1) space
-public int minCostClimbingStairs(int[] cost) {
-	int n = cost.length;
-	int first = cost[0];
-	int second = cost[1];
-	if (n<=2) return Math.min(first, second);
-	for (int i=2; i<n; i++) {
-		int curr = cost[i] + Math.min(first, second);
-		first = second;
-		second = curr;
-	}
-	return Math.min(first, second);
-}
+class Solution(object):
+    def minCostClimbingStairs(self, cost):
+        """
+        :type cost: List[int]
+        :rtype: int
+        """
+        n = len(cost)
+        if n <= 1:
+            return 0
+        if n == 2:
+            return min(cost[0], cost[1])
+        dp = [0] * n
+
+        dp[0] = cost[0]
+        dp[1] = cost[1]
+        for i in range(2, n):
+            dp[i] = cost[i] + min(dp[i - 1], dp[i - 2])
+
+        return min(dp[-1], dp[-2])
+
+"""
+Time Complexity O(n)
+Space Complexity O(n)
+"""
