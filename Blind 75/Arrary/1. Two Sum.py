@@ -56,3 +56,13 @@ Here a dictionary is used within the forloop. The insertion into the dictionary 
 Space Complextiy O(n)
 Here the space used depend on the input. The worst case when no two elements add up to the target all the elements will stored in the dictionary.
 """
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        prevMap = {}  # val -> index
+
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in prevMap:
+                return [prevMap[diff], i]
+            prevMap[n] = i
