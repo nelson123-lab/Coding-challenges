@@ -17,5 +17,8 @@ class Solution(object):
 
 
 """
-- 
+- Here we can consider this problem as an interval problem. Since the start of the interval is already sorted.
+- We need a variable to keep track of the current time.
+Time Complexity O(n)
+Space Complexity O(1)
 """
