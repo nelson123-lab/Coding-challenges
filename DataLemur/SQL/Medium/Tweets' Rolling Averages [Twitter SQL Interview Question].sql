@@ -7,3 +7,7 @@ SELECT
     ROWS BETWEEN 2 PRECEDING AND CURRENT ROW)
   ,2) AS rolling_avg_3d
 FROM tweets;
+
+/*
+- Here we use the partition method to find the rolling average.
+?*
